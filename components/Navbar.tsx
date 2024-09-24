@@ -16,12 +16,7 @@ import { useState } from "react";
 export default function navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = [
-    "Home",
-    "Chats",
-    "Github",
-    "Log Out | Log in",
-  ];
+  const menuItems = ["Home", "Chats", "Github", "Log Out | Log in"];
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -58,7 +53,7 @@ export default function navbar() {
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
+          <Link href="/login">Login</Link>
         </NavbarItem>
         <NavbarItem>
           <Button as={Link} color="primary" href="/signup" variant="flat">
