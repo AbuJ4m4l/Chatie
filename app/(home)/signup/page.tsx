@@ -1,28 +1,36 @@
-import { Input } from "@nextui-org/input";
-import { Button } from "@nextui-org/button";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { moderniz } from "@/config/fonts";
 import Link from "next/link";
 export default function signup() {
   return (
     <div className="xl:mr-[900px]">
       <div className="flex justify-center xl:w-[400px]">
-        <h1
-          className={`${moderniz.className} md:text-3xl mb-16 bg-clip-text text-transparent bg-gradient-to-br from-primary to-[#8b8b8b]`}
-        >
+        <h1 className={`${moderniz.className} md:text-3xl mb-16 `}>
           Signup to Chatie
         </h1>
       </div>
       <div className="flex justify-center">
-        <Input type="text" label="Username" isRequired className="w-[300px]" />
+        <Input
+          type="text"
+          placeholder="Username"
+          required
+          className="w-[300px]"
+        />
       </div>
       <div className="flex justify-center">
-        <Input type="email" label="Email" isRequired className="w-[300px] mt-6" />
+        <Input
+          type="email"
+          placeholder="Email"
+          required
+          className="w-[300px] mt-6"
+        />
       </div>
       <div className="flex justify-center">
         <Input
           type="password"
-          label="Password"
-          isRequired
+          placeholder="Password"
+          required
           className="mt-6 w-[300px]"
         />
       </div>

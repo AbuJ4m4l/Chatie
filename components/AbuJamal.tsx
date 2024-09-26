@@ -2,7 +2,7 @@ import { moderniz } from "@/config/fonts";
 import { motion } from "framer-motion";
 
 export default function AbuJamal() {
-  const text = "AbuJamal";
+  const text = "AbuJ4m4l";
   const letters = Array.from(text);
 
   const container = {
