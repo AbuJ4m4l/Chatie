@@ -27,7 +27,7 @@ export default function ChatsLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          "max-h-screen overflow-hidden bg-secondary font-sans antialiased",
           fontSans.variable
         )}
       >
